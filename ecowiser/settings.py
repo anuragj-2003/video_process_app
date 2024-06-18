@@ -1,21 +1,20 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-load_dotenv()
-
-BASE_DIR = Path(__file__).resolve().parent.parent
+# Set DEBUG to False in production
+DEBUG = True
 
 # AWS Settings
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_REGION_NAME = os.getenv('AWS_REGION_NAME')
-AWS_S3_BUCKET_NAME = os.getenv('AWS_S3_BUCKET_NAME')
-DYNAMODB_TABLE_NAME = os.getenv('DYNAMODB_TABLE_NAME')
+AWS_ACCESS_KEY_ID = 'AKIA2UC275YLNH4ONANH'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_REGION_NAME = 'ap-south-1'
+AWS_S3_BUCKET_NAME = 'ecowiser-django-app-project-bucket'
+DYNAMODB_TABLE_NAME = 'ecowiser-dynamodb-subtitle'
+
+# Django settings
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-glta13sp$6d9@n$c40j&7&yjyst-y7!&gldf#p13=#_rk%w740')
-
-DEBUG = True  # Set to False in production
 
 ALLOWED_HOSTS = ['.vercel.app', 'video-processing-application.vercel.app', 'localhost', '127.0.0.1', '[::1]', '*']
 
