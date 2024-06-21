@@ -5,11 +5,11 @@ from pathlib import Path
 DEBUG = True
 
 # AWS Settings
-AWS_ACCESS_KEY_ID = 'AKIA2UC275YLNH4ONANH'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_REGION_NAME = 'ap-south-1'
-AWS_S3_BUCKET_NAME = 'ecowiser-django-app-project-bucket'
-DYNAMODB_TABLE_NAME = 'ecowiser-dynamodb-subtitle'
+AWS_ACCESS_KEY_ID = [AWS_ACCESS_KEY_ID]
+AWS_SECRET_ACCESS_KEY = [AWS_SECRET_ACCESS_KEY]
+AWS_REGION_NAME = [AWS_REGION_NAME]
+AWS_S3_BUCKET_NAME = [AWS_S3_BUCKET_NAME]
+DYNAMODB_TABLE_NAME = [DYNAMODB_TABLE_NAME ]
 
 # Django settings
 BASE_DIR = Path(__file__).resolve().parent.parent
